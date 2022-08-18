@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".GameScreen">
+
+    <ImageView
+        android:id="@+id/heartImage"
+        android:layout_width="51dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/potionImage"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/potion" />
+
+    <TextView
+        android:id="@+id/mainTextPlace"
+        android:layout_width="383dp"
+        android:layout_height="309dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/aclonica"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/choiceButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="57dp"
+        android:onClick="button1"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextPlace" />
+
+    <Button
+        android:id="@+id/choiceButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="57dp"
+        android:onClick="button2"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/choiceButton3"
+        app:layout_constraintStart_toEndOf="@+id/choiceButton1"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextPlace" />
+
+    <Button
+        android:id="@+id/choiceButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="57dp"
+        android:onClick="button3"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choiceButton2"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextPlace" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="367dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/mainTextPlace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potionImage"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
